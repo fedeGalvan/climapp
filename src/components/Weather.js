@@ -30,6 +30,8 @@ const Weather = ({ currentTemp }) => {
             </h1>
             <img
               src={`http://openweathermap.org/img/wn/${currentTemp.weather[0].icon}@2x.png`}
+              rel="noreferrer"
+              alt="icon"
             ></img>
           </div>
           <div>

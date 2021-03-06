@@ -12,6 +12,7 @@ const Footer = () => {
           <a
             href="https://www.linkedin.com/mwlite/in/federico-galv%C3%A1n-479b021a5"
             target="_blank"
+            rel="noreferrer"
           >
             Federico Galvan
           </a>
