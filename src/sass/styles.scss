@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&display=swap");
+@import "responsive";
+
+body {
+  font-family: "Merriweather", serif;
+}
+
+p {
+  line-height: 30px;
+}
+#header {
+  align-items: center;
+  background: rgb(99, 42, 255);
+  color: white;
+  text-align: center;
+  h2 {
+    font-weight: bold;
+  }
+  .app {
+    background: rgba(255, 255, 255, 0.089);
+    border-radius: 5px;
+    font-size: 2rem;
+    span {
+      background: white;
+      border-radius: 5px;
+      box-shadow: 0px 0px 10px white;
+      color: rgb(99, 42, 255);
+      margin-left: 1px;
+      padding: 0.05rem;
+    }
+  }
+}
+
+#main {
+  text-align: center;
+  .wrapper {
+    border-radius: 5px;
+    border: 1px solid rgb(99, 42, 255);
+    margin: 2.5rem auto 1rem;
+    padding: 1rem;
+    width: 50%;
+    box-shadow: 0px 0px 10px rgb(99, 42, 255);
+  }
+  .title {
+    font-size: 1.3rem;
+  }
+  .subtitle {
+    margin: 0;
+    font-size: 1rem;
+  }
+
+  .column {
+    .subtitle {
+      margin-top: 1rem;
+    }
+  }
+  .actualWeather {
+    font-size: 1.5rem;
+  }
+}
+
+#weather {
+  width: 90%;
+  margin: auto;
+  .column {
+    margin: 0;
+  }
+
+  .is-three-fifths {
+    p {
+      font-size: 1.2rem;
+      b {
+        color: rgb(99, 42, 255);
+      }
+    }
+  }
+}
+
+.lds-ring {
+  display: inline-block;
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.lds-ring div {
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border: 8px solid rgb(99, 42, 255);
+  border-radius: 50%;
+  animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: rgb(99, 42, 255) transparent transparent transparent;
+}
+.lds-ring div:nth-child(1) {
+  animation-delay: -0.45s;
+}
+.lds-ring div:nth-child(2) {
+  animation-delay: -0.3s;
+}
+.lds-ring div:nth-child(3) {
+  animation-delay: -0.15s;
+}
+@keyframes lds-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

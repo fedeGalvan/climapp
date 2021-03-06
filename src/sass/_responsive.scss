@@ -1,0 +1,20 @@
+@media screen and (max-width: 1024px) {
+  #header {
+    .columns {
+      margin: 0;
+    }
+    .column {
+      margin: auto !important;
+      padding: 0.5rem;
+      &:nth-child(1) {
+        padding-top: 1rem;
+      }
+    }
+  }
+  #main {
+    text-align: center;
+    .wrapper {
+      width: 90% !important;
+    }
+  }
+}
