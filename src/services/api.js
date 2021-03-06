@@ -18,7 +18,7 @@ const location = async () => {
 };
 
 const getWeather = async (data) => {
-  const url = `http://api.openweathermap.org/data/2.5/weather?q=${data}&lang=sp&appid=b34592baf7d04f61709f4b3c4e0db344`;
+  const url = `https://api.openweathermap.org/data/2.5/weather?q=${data}&lang=sp&appid=b34592baf7d04f61709f4b3c4e0db344`;
   const weather = await fetch(url)
     .then((res) => res.json())
     .then((data) => (data, { data }));
