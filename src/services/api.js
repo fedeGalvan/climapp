@@ -1,6 +1,6 @@
 /* eslint-disable no-sequences */
 const location = async () => {
-  const url = "http://worldtimeapi.org/api/ip";
+  const url = "https://worldtimeapi.org/api/ip";
   const geo = await fetch(url)
     .then((res) => res.json())
     .then((data) => (data, { data }));
